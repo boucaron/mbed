@@ -5,12 +5,19 @@ dist
 
 # MANIFEST file
 MANIFEST
+doxygen_objdb_*
 
 # Private settings
-private_settings.py
+mbed_settings.py
 
 # Default Build Directory
-build/
+.build/
+BUILD/
+.mbed
+venv/
+
+# Mbedls
+.mbedls-mock.lock
 
 # Eclipse Project Files
 .cproject
@@ -32,8 +39,6 @@ var
 sdist
 develop-eggs
 .installed.cfg
-lib
-lib64
 
 # Installer logs
 pip-log.txt
@@ -42,6 +47,8 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+.cache
+.hypothesis
 
 # Translations
 *.mo
@@ -70,7 +77,23 @@ debug.log
 # Cscope
 cscope.*
 
+# Ctags
+tags
+
 # vim swap files
 *.swp
 *~
 
+# Visual Studio Code
+.vscode/
+
+features/FEATURE_BLE/targets/TARGET_CORDIO/stack_backup/
+
+.pytest_cache
+log
+
+# Icetea related file
+test_suite.json
+
+# default delivery dir
+DELIVERY/
